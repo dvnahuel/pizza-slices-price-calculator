@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
+    <title>PizzaSlice</title>
+</head>
+<body>
+    <div class="main-content"> 
+        <i class="fas fa-pizza-slice"></i>
+        <h1>Pizza Slicer</h1>
+        <div class="row">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/DvNahuel" target="_blank" class="list-inline-item  social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/dvnahuel/" target="_blank" class="list-inline-item  social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/dvnahuel" target="_blank" class="list-inline-item  social-icon">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div class='input-style'>
+            <div>
+                <input type="number"  id="totalPrice" placeholder="Total pizza's price $">
+            </div>
+            <div>
+                <input type="number" id="pizzaPorcions" min="1" max="8" step="1"  id="pizzaSlices" placeholder="Pizza's total slices">
+            </div>
+            <div>
+                <input type="number" min="1" step="1" id="slicesEaten" placeholder="Eaten Slices">
+            </div>
+            <div id="output" class="output">
+                <h2>Total a pagar: </h2>
+            </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
