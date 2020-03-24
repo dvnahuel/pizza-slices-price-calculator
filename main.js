@@ -2,7 +2,6 @@ var slicesEatean = document.getElementById('slicesEaten');
 var pizzaPorcions = document.getElementById('pizzaPorcions');
 var totalPrice = document.getElementById('totalPrice');
 var calculation = 0;
-document.getElementById('output').style.visibility = 'hidden';
 
 slicesEatean.addEventListener('input', calculate);
 pizzaPorcions.addEventListener('input', calculate);
@@ -13,7 +12,7 @@ function calculate(){
         calculation = (totalPrice.value / pizzaPorcions.value) * slicesEatean.value;
         if (calculation >= 1) {
             document.getElementById('output').innerHTML = 'You have to pay ' + calculation + '$';
-            document.getElementById('output').style.visibility = 'visible';
+            document.getElementById('output').style.display = 'block';
         }
     }
 }
