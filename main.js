@@ -11,7 +11,7 @@ function calculate(){
     if(pizzaPorcions.value >= 0){
         calculation = (totalPrice.value / pizzaPorcions.value) * slicesEatean.value;
         if (calculation >= 1) {
-            document.getElementById('output').innerHTML = calculation + '$';
+            document.getElementById('output').innerHTML = calculation.toFixed(2) + '$';
             document.getElementById('output').style.display = 'block';
         }
     }
